@@ -1,0 +1,80 @@
+<html>
+<body>
+<script>
+var n=window.prompt("enter no of tickets");
+function calculateCost(n)
+{
+if(n==1)
+{
+document.write("The cost of the ticket is 9$");
+}
+else if(n>6)
+{
+document.write("booking is not allowed");
+}
+else if(n>=2 && n<=5)
+{
+	if(n==2)
+	{
+	 var s=(9-9*(0.05));
+       document.write("1st person 5%");
+       document.write("<br>");
+       var s1=(9-9*(0.07));
+       document.write("2nd person 7%");
+       document.write("<br>");
+	 document.write(""+(s+s1));
+	}
+ else if(n==3)
+  {  var s=(9-9*(0.05));
+     document.write("1st person 5%");
+     document.write("<br>");
+     var s1=(9-9*(0.07));
+     document.write("2nd person 7%");
+     document.write("<br>");
+     var s2=(9-9*(0.09));
+     document.write("3rd person 9%");
+     document.write("<br>");
+     document.write("sum is",s+s1+s2);
+  }
+else if(n==4)
+{
+     var s=(9-9*(0.05));
+     document.write("1st person 5%");
+     document.write("<br>");
+     var s1=(9-9*(0.07));
+     document.write("2 person 7%");
+     document.write("<br>");
+     var s2=(9-9*(0.09));
+     document.write("3 person 9%");
+     document.write("<br>");
+     var s3=(9-9*(0.11));
+     document.write("4 person 11%");
+     document.write("<br>");
+     document.write("sum is",s+s1+s2+s3);
+}
+else if(n==5)
+{
+     var s=(9-9*(0.05));
+     document.write("1st person 5%");
+     document.write("<br>");
+     var s1=(9-9*(0.07));
+     document.write("2 person 7%");
+     document.write("<br>");
+     var s2=(9-9*(0.09));
+     document.write("3 person 9%");
+     document.write("<br>");
+     var s3=(9-9*(0.11));
+     document.write("4 person 11%");
+     document.write("<br>");
+	var s4=(9-9*(0.13));
+	document.write("5 person 13%");
+	document.write("<br>");
+     document.write("sum is",s+s1+s2+s3+s4);
+}
+}
+}
+calculateCost(n);
+</script>
+</body>
+</html>
+

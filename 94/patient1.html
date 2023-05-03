@@ -1,0 +1,64 @@
+<html>
+<head>
+<style>
+h1{
+text-align:center;
+margin-top:150px;
+}
+form{
+position:absolute;
+top:30%;
+left:40%;
+}
+label{
+font-size:20px;
+margin-right:50px;
+margin-top:20px;
+}
+.input{
+width:300px;
+height:30px;
+margin-top:20px;
+}
+.btns{
+background-color:red;
+color:white;
+padding:5px;
+border-radius:4px;
+outline:none;
+margin:30px 0 30px 0;
+}
+.btns1{
+background-color:gainsboro;
+color:black;
+padding:5px;
+border-radius:4px;
+outline:none;
+margin:30px 0 30px 0;
+}
+</style>
+</head>
+<body>
+<h1>Patient Registration Form</h1>
+<form action="insert.jsp">
+<table>
+<tr>
+<td><label for="name">Name</label></td>
+<td><input type="text" name="sname" class="input"></td>
+</tr>
+<tr>
+<td><label for="password">password</label></td>
+<td><input type="password" name="pwd" class="input"></td>
+</tr>
+<tr>
+<td><label for="email">Email</label></td>
+<td><input type="email" name="email" class="input"></td>
+</tr>
+<tr>
+<td><input type="submit" value="Register"/></td>
+<td><input type="reset" value="Cancel"class="btns1"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
